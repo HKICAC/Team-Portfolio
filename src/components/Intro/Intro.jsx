@@ -2,26 +2,25 @@
 import React from 'react';
 import Typical from 'react-typical'
 import "./intro.css";
-import Me from "../img/icac.png";
+import Me from "../../img/icac.png";
 function Intro() {
   return (
     <div>
-      <Typical
-      loop={Infinity}
-      steps={[
-        "You know what?",
-        1000,
-        "I am still working on this",
-        1000,
-        "But I am getting there",
-        1000
-      ]}
-      />
+      
       <div className="intro">
         <div className="intro-left">
           <div className="intro-left-wrapper">
             <h2 className="intro-i">Hi, my name is</h2>
             <h1 className="intro-name">HKICAC</h1>
+            <Typical
+              loop={Infinity}
+              steps={[
+                "\"Rome wasn’t built in a day.\"",
+                5000,
+                "\"Everything is hard before it is easy.\" —Johann Wolfgang von Goethe",
+                5000,
+              ]}
+            />
             <p className='intro-desc'>I am a computer science student</p>
           </div>
           
