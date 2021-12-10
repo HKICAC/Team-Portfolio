@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/Team-Portfolio/static/css/main.5739ad41.chunk.css",
-    "main.js": "/Team-Portfolio/static/js/main.d9990e81.chunk.js",
-    "main.js.map": "/Team-Portfolio/static/js/main.d9990e81.chunk.js.map",
-    "runtime-main.js": "/Team-Portfolio/static/js/runtime-main.22abc327.js",
-    "runtime-main.js.map": "/Team-Portfolio/static/js/runtime-main.22abc327.js.map",
-    "static/js/2.826c218d.chunk.js": "/Team-Portfolio/static/js/2.826c218d.chunk.js",
-    "static/js/2.826c218d.chunk.js.map": "/Team-Portfolio/static/js/2.826c218d.chunk.js.map",
-    "static/js/3.b9cd172f.chunk.js": "/Team-Portfolio/static/js/3.b9cd172f.chunk.js",
-    "static/js/3.b9cd172f.chunk.js.map": "/Team-Portfolio/static/js/3.b9cd172f.chunk.js.map",
+    "main.css": "/Team-Portfolio/static/css/main.75e56ba7.chunk.css",
+    "main.js": "/Team-Portfolio/static/js/main.835bd4f0.chunk.js",
+    "main.js.map": "/Team-Portfolio/static/js/main.835bd4f0.chunk.js.map",
+    "runtime-main.js": "/Team-Portfolio/static/js/runtime-main.19e66bb6.js",
+    "runtime-main.js.map": "/Team-Portfolio/static/js/runtime-main.19e66bb6.js.map",
+    "static/js/2.79de76f8.chunk.js": "/Team-Portfolio/static/js/2.79de76f8.chunk.js",
+    "static/js/2.79de76f8.chunk.js.map": "/Team-Portfolio/static/js/2.79de76f8.chunk.js.map",
+    "static/js/3.3345cfe8.chunk.js": "/Team-Portfolio/static/js/3.3345cfe8.chunk.js",
+    "static/js/3.3345cfe8.chunk.js.map": "/Team-Portfolio/static/js/3.3345cfe8.chunk.js.map",
     "index.html": "/Team-Portfolio/index.html",
-    "static/css/main.5739ad41.chunk.css.map": "/Team-Portfolio/static/css/main.5739ad41.chunk.css.map",
-    "static/js/2.826c218d.chunk.js.LICENSE.txt": "/Team-Portfolio/static/js/2.826c218d.chunk.js.LICENSE.txt"
+    "static/css/main.75e56ba7.chunk.css.map": "/Team-Portfolio/static/css/main.75e56ba7.chunk.css.map",
+    "static/js/2.79de76f8.chunk.js.LICENSE.txt": "/Team-Portfolio/static/js/2.79de76f8.chunk.js.LICENSE.txt",
+    "static/media/icac.c1364925.png": "/Team-Portfolio/static/media/icac.c1364925.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.22abc327.js",
-    "static/js/2.826c218d.chunk.js",
-    "static/css/main.5739ad41.chunk.css",
-    "static/js/main.d9990e81.chunk.js"
+    "static/js/runtime-main.19e66bb6.js",
+    "static/js/2.79de76f8.chunk.js",
+    "static/css/main.75e56ba7.chunk.css",
+    "static/js/main.835bd4f0.chunk.js"
   ]
 }
