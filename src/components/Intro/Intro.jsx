@@ -17,8 +17,6 @@ function Intro() {
                 steps={[
                   "",
                   3000,
-                  "...",
-                  1000,
                   "Hi, my name is",
                   5000,
                 ]}

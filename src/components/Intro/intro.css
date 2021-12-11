@@ -3,7 +3,7 @@
     text-align: left;
     height: 100vh;
     background-color: #FAEBD7;
-    animation-duration: 3s;
+    animation-duration: 2s;
   animation-name: slidein;
 }
 
@@ -17,7 +17,7 @@
       margin-left: 0%;
       width: 100%;
     }
-  }
+}
 
 .intro-left{
     flex: 1;

@@ -1,32 +1,39 @@
 import React from 'react';
 import "./experience.css";
-import Me from "../../img/apple.png";
-
+import Grid from '@material-ui/core/Grid';
+import Apple from "../../img/apple.png";
+import Facebook from "../../img/facebook.png";
+import Netflix from "../../img/netflix.jpg";
 function Experience() {
-  return (
-    <div>
-      
-      <div className="experience">
-        <div className="header">
-        <h1>Experience</h1>
-        </div>
-        
-        <div className="experience-left">
-            <div className="experience-job">
-                <h2>Apple Software Engineering Intern</h2>
-                <p>2020-2021</p>
-            </div>
-            
-            
-        </div>
-          
-        <div className="experience-right">
-            <div className="experience-job">
-                <img className="experience-img" src={Me} alt=""/>
-            </div>
-          
-        </div>
+   return (
+    <div className="experience">
+      <h1>Experience</h1>
+      <div>
+        <Grid className="experience-grid" container spacing={3}>
+          <Grid item xs={6}>
+            Facebook Intern<br/>
+            Summer 2021
+          </Grid>
+          <Grid item xs={6}>
+            <img src={Facebook} className="experience-img"/>
+          </Grid>
+          <Grid item xs={6}>
+            <img src={Apple} className="experience-img"/>
+          </Grid>
+          <Grid item xs={6}>
+            Apple Intern<br/>
+            Summer 2021 
+          </Grid>
+          <Grid item xs={6}>
+            Netflix Intern<br/>
+            Summer 2021
+          </Grid>
+          <Grid item xs={6}>
+            <img src={Netflix} className="experience-img"/>
+          </Grid>
+        </Grid>
       </div>
+      
       
     </div>
   );

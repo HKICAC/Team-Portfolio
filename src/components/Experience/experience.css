@@ -1,65 +1,23 @@
 .experience{
-    display: flex;
     text-align: left;
-    height: 100vh;
-    background-color: #FFFFF0;
-}
-
-.experience-left{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
     height: 100%;
+    background-color: #FFFFF0;
+    margin: 0;
+    padding: 60px;
 }
 
-.experience-right{
-    flex: 1;
-    align-items: left;
-    justify-content: left;
+h1 {
+    margin: 0;
 }
 
-.experience-left-wrapper{
-    padding: 50px;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.experience-grid {
+    justify-items: center;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
-.experience-card.bg {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    background-color: #333;
-  }
-  
-  .experience-card {
-    width: 60%;
-    height: 70vh;
-    border-radius: 30px;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .experience-img {
+.experience-img {
     width: 30%;
-    object-fit: cover;
-  }
-
-  h1{
-      padding-left: 40px;
-  }
-
-  .header{
-      height: auto;
-      width: 100%;
-      position: absolute;
-      display: block;
-  }
-
-  .experience-job{
-      height: 70%;
-  }
+}
