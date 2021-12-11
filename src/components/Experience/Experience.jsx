@@ -1,5 +1,4 @@
 import React from 'react';
-import Typical from 'react-typical'
 import "./experience.css";
 import Me from "../../img/apple.png";
 

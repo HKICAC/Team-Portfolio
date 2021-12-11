@@ -3,6 +3,7 @@ import React from 'react';
 import Typical from 'react-typical'
 import "./intro.css";
 import Me from "../../img/icac.png";
+import {FaGithubSquare, FaLinkedin} from "react-icons/fa";
 function Intro() {
   return (
     <div>
@@ -10,17 +11,30 @@ function Intro() {
       <div className="intro">
         <div className="intro-left">
           <div className="intro-left-wrapper">
-            <h2 className="intro-i">Hi, my name is</h2>
+            <div className="intro-i">
+              <Typical
+                loop={1}
+                steps={[
+                  "",
+                  3000,
+                  "...",
+                  1000,
+                  "Hi, my name is",
+                  5000,
+                ]}
+              />
+            </div>
             <h1 className="intro-name">HKICAC</h1>
-            <Typical
-              loop={Infinity}
-              steps={[
-                "\"Rome wasn’t built in a day.\"",
-                5000,
-                "\"Everything is hard before it is easy.\" —Johann Wolfgang von Goethe",
-                5000,
-              ]}
-            />
+            <div className="social-media">
+              <a href="https://github.com/orgs/HKICAC/dashboard" target="_blank" rel="noreferrer">
+                <FaGithubSquare className="social-button"/>
+              </a>
+              <a href="https://www.linkedin.com/in/edwinkam/" target="_blank" rel="noreferrer">
+              <FaLinkedin className="social-button"/>
+              </a>
+            
+            </div>
+            
             <p className='intro-desc'>I am a computer science student</p>
           </div>
           

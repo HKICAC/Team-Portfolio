@@ -48,3 +48,35 @@
     height: 100%;
     object-fit: cover;
   }
+
+  @media screen and (max-width: 480px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .about-left-wrapper {
+  
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    .about-desc{
+    display: none;
+    }
+
+    .about-img {
+        width: 70%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+    }
+    .about-card {
+      width: 100%;
+      height: 40vh;
+      border-radius: 30px;
+      position: relative;
+    }
+}
