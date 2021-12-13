@@ -38,4 +38,18 @@
 
 .project-box:hover .project-box-body{
     display: block;
+    animation-duration: 1.5s;
+    animation-name: textFadeIn;
+}
+
+@keyframes textFadeIn{
+    from {
+        margin-top:10%;
+        color:rgba(0, 0, 0, 0);
+    }
+
+    to{
+        margin-top:0%;
+        color:rgba(0, 0, 0);
+    }
 }
