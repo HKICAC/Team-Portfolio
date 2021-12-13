@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Typical from 'react-typical'
+// import Typical from 'react-typical'
 import "./intro.css";
 import Me from "../../img/icac.png";
 import {FaGithubSquare, FaLinkedin} from "react-icons/fa";
@@ -12,15 +12,6 @@ function Intro() {
         <div className="intro-left">
           <div className="intro-left-wrapper">
             <div className="intro-i">
-              <Typical
-                loop={1}
-                steps={[
-                  "",
-                  3000,
-                  "Hi, my name is",
-                  5000,
-                ]}
-              />
             </div>
             <h1 className="intro-name">HKICAC</h1>
             <div className="social-media">
