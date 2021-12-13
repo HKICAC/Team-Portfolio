@@ -16,6 +16,9 @@ import useWindowDimensions from '../Window/Window';
 // React-typing-effect
 import ReactTypingEffect from 'react-typing-effect';
 
+// Github Buttons
+import {FaGithubSquare, FaLinkedin} from "react-icons/fa";
+
 
 function Project() {
     const { height, width } = useWindowDimensions();
@@ -31,9 +34,16 @@ function Project() {
             <Grid className="experience-grid" container spacing={3}>
                 <Grid item xs={4}>
                 <div className="project-box">
+
                     <img className="project-img" src={Netflix} alt='Netflix Logo'></img>
                     <Typography variant="h2">Project 1</Typography>
-                    <Typography className='project-box-body'>Project 1 is a very interesting project. It utilizes the NERP stack is very useful.</Typography>
+                    <div className='project-box-body'>
+                        <Typography>Project 1 is a very interesting project. It utilizes the NERP stack is very useful.</Typography>
+                        <a href="https://github.com/orgs/HKICAC/dashboard" target="_blank" rel="noreferrer">
+                            <FaGithubSquare className="social-button"/>
+                        </a>
+                    </div>
+
                 </div>
                 </Grid>
                 <Grid item xs={4}>
