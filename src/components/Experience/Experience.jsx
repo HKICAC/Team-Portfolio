@@ -11,21 +11,22 @@ function Experience() {
       <div>
         <Grid className="experience-grid" container spacing={3}>
           <Grid item xs={6}>
-            Facebook Intern<br/>
+            <h2>Facebook Intern</h2>
             Summer 2021
           </Grid>
           <Grid item xs={6}>
             <img src={Facebook} className="experience-img"/>
+            
           </Grid>
           <Grid item xs={6}>
             <img src={Apple} className="experience-img"/>
           </Grid>
           <Grid item xs={6}>
-            Apple Intern<br/>
+          <h2>Apple Intern</h2>
             Summer 2021 
           </Grid>
           <Grid item xs={6}>
-            Netflix Intern<br/>
+          <h2>Netflix Intern</h2>
             Summer 2021
           </Grid>
           <Grid item xs={6}>

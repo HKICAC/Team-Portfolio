@@ -1,14 +1,14 @@
 import React from 'react';
 import "./about.css";
-import Me from "../../img/icac.png";
+import Me from "../../img/icacbuilding.jpg";
 function About() {
   return (
     <div className="about">
-        <div className="about-left">
-          <div className="about-card bg"></div>
-          <div className="about-card">
-            <img className="about-img"
-                src={Me} alt="haha"/>
+      <div className="about-left">
+        <div className="about-card bg"></div>
+        <div className="about-card">
+          <img className="about-img"
+              src={Me} alt="haha"/>
         </div>
       </div>
       <div className="about-right">
