@@ -6,6 +6,9 @@
     padding: 60px;
 }
 
+.project-title{
+    font-size: 30px;
+}
 .project-box {
     height: 50vh;
     background-color: white;

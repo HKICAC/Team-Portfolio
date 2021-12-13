@@ -11,16 +11,23 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Netflix from "../../img/netflix.jpg";
 import useWindowDimensions from '../Window/Window';
-import {useMediaQuery} from '@material-ui/core';
+
+// https://www.npmjs.com/package/react-typing-effect
+// React-typing-effect
+import ReactTypingEffect from 'react-typing-effect';
 
 
 function Project() {
     const { height, width } = useWindowDimensions();
-    // Media Queries 
 
     return (
         <div className="project">
-        <h1>Project</h1>
+        <ReactTypingEffect
+            text={["Project list."]}
+            eraseDelay= {50000000}
+            typingDelay= {2500}
+            className= 'project-title'
+        />
             <Grid className="experience-grid" container spacing={3}>
                 <Grid item xs={4}>
                 <div className="project-box">

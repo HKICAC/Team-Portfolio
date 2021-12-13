@@ -1,9 +1,14 @@
 
 import React from 'react';
-// import Typical from 'react-typical'
 import "./intro.css";
 import Me from "../../img/icac.png";
 import {FaGithubSquare, FaLinkedin} from "react-icons/fa";
+
+// https://www.npmjs.com/package/react-typing-effect
+// React-typing-effect
+import ReactTypingEffect from 'react-typing-effect';
+
+
 function Intro() {
   return (
     <div>
@@ -12,6 +17,11 @@ function Intro() {
         <div className="intro-left">
           <div className="intro-left-wrapper">
             <div className="intro-i">
+              <ReactTypingEffect
+                text={["Hi, my name is"]}
+                eraseDelay= {50000000}
+                typingDelay= {1750}
+              />
             </div>
             <h1 className="intro-name">HKICAC</h1>
             <div className="social-media">
