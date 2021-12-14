@@ -14,6 +14,9 @@ import IconButton from '@mui/material/IconButton';
 function Contact() {
   const [copied, setCopied] = React.useState(null);
   const [open, setOpen] = React.useState(false);
+  const github = 'https://github.com/orgs/HKICAC/dashboard';
+  const linkedin = 'https://www.linkedin.com/in/edwinkam/';
+  const email = 'haha@gmail.com';
   function copyText(txt) {
     setCopied(txt);
     setOpen(true);
@@ -27,26 +30,30 @@ function Contact() {
   };
 
   return (
-    <div className="contact">
+    <div id="contact" className="contact">
         <h1>Contact</h1>
         <div className="contact-link">
-        <FaGithubSquare className="contact-social-button"
-          onClick={() => copyText("github")}/>
-          <p>https://github.com/</p>
+        <a href={github} target="_blank" rel="noreferrer">
+          <FaGithubSquare className="contact-social-button"/>
+        </a>
+          <p>{github}</p>
           <MdContentCopy className="contact-copy-button"
-            onClick={() => copyText("github")}/>
+            onClick={() => copyText(github)}/>
         </div>
         <div className="contact-link">
-          <FaLinkedin className="contact-social-button"/>
-          <p>https://www.linkedin.com/feed/</p>
+          <a href={linkedin} target="_blank" rel="noreferrer">
+            <FaLinkedin className="contact-social-button"/>
+          </a>
+          <p>{linkedin}</p>
           <MdContentCopy className="contact-copy-button"
-            onClick={() => copyText("https://www.linkedin.com/feed/")}/>
+            onClick={() => copyText(linkedin)}/>
         </div>
         <div className="contact-link">
-        <FiMail className="contact-social-button"/>
-          <p>haha.gmail</p>
+        <FiMail className="contact-social-button"
+          onClick={()=>copyText(email)}/>
+          <p>{email}</p>
           <MdContentCopy className="contact-copy-button"
-              onClick={() => copyText("haha.gmail")}/>
+              onClick={() => copyText(email)}/>
         </div>
         <Snackbar
           open={open}

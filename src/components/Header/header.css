@@ -1,0 +1,44 @@
+.header {
+    position: sticky;
+    /* height: 10vh; */
+    background-color: white;
+    /* animation-duration: 2s;
+    animation-name: slidein; */
+    display: flex;
+    align-items: center;
+    
+}
+
+.header-right {
+    position: absolute;
+    right: 5px;
+    
+}
+
+.header-right {
+    position: absolute;
+    right: 5px;
+    
+}
+
+.header-home {
+    font-size:35px;
+    padding-left: 20px;
+}
+
+.header-button {
+    font-size:35px;
+    padding-right: 20px;
+}
+
+/* @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+} */

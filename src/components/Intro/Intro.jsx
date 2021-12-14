@@ -3,6 +3,7 @@ import React from 'react';
 import "./intro.css";
 import Me from "../../img/icac.png";
 import {FaGithubSquare, FaLinkedin} from "react-icons/fa";
+import { AiFillHome, AiOutlineContacts } from "react-icons/ai";
 
 // https://www.npmjs.com/package/react-typing-effect
 // React-typing-effect
@@ -14,9 +15,15 @@ function Intro() {
     <div>
       
       <div className="intro">
+        
         <div className="intro-left">
+          {/* <a href="#contact" className="intro-contact">
+            <p className="intro-p-button">Contact Me</p>
+          </a> */}
           <div className="intro-left-wrapper">
+          
             <div className="intro-i">
+              
               <ReactTypingEffect
                 text={["Hi, my name is"]}
                 eraseDelay= {50000000}
@@ -30,6 +37,9 @@ function Intro() {
               </a>
               <a href="https://www.linkedin.com/in/edwinkam/" target="_blank" rel="noreferrer">
               <FaLinkedin className="social-button"/>
+              </a>
+              <a href="#contact">
+              <AiOutlineContacts className="social-button"/>
               </a>
             
             </div>

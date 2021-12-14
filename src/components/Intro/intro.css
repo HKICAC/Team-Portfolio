@@ -7,6 +7,31 @@
     animation-name: slidein;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.intro-contact:link, .intro-contact:visited {
+    background-color: green;
+    color: white;
+    padding: 3px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-duration: 2s;
+    /* animation-name: slidein-button; */
+  }
+  
+  .intro-contact:hover, .intro-contact:active {
+    background-color: grey;
+  }
+
+
 @keyframes slidein {
     from {
       margin-left: 100%;
