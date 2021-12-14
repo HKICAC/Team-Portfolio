@@ -9,13 +9,17 @@ function Experience() {
     <div className="experience">
       <h1>Experience</h1>
       <div>
-        <Grid className="experience-grid" container spacing={3}>
+        <Grid className="experience-content" container spacing={3}>
           <Grid item xs={6}>
             <h2>Facebook Intern</h2>
             Summer 2021
           </Grid>
-          <Grid item xs={6}>
-            <img src={Facebook} className="experience-img"/>
+          <Grid item xs={6} className="experience-grid">
+            <div className="experience-card bg"></div>
+            <div className="experience-card">
+              <img src={Facebook} className="experience-img"/>
+            </div>
+            
             
           </Grid>
           <Grid item xs={6}>

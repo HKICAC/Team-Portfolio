@@ -1,6 +1,7 @@
 .project{
     text-align: left;
-    height: 100%;
+    position: relative;
+    height: 100vh;
     background-color: #DCDCDC;
     margin: 0;
     padding: 60px;
@@ -20,8 +21,6 @@
 }
 
 .project-box-body{
-    align: center;
-    variant: body1;
     color:rgba(0, 0, 0);
     display: none;
 }
