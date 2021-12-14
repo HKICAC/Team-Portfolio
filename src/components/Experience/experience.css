@@ -10,7 +10,7 @@ h1 {
     margin: 0;
 }
 
-.experience-grid {
+.experience-content {
     justify-items: center;
     text-align: center;
     justify-items: center;
@@ -19,11 +19,11 @@ h1 {
     grid-template-rows: 60px;
 }
 
-.experience-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.experience-grid {
+    position: relative;
 }
+
+
 
 .experience-left-poly {
     clip-path: polygon(49% 0, 100% 0, 100% 100%, 17% 100%);
@@ -35,15 +35,25 @@ h1 {
 
 .experience-card.bg {
     position: absolute;
-    top: 50px;
-    left: 50px;
+    /* top: 50px;
+    left: 50px; */
     background-color: #333;
+    width: 45%;
+    height: 45vh;
   }
   
-  .experience-card {
-    width: 60%;
-    height: 70vh;
+.experience-card {
+    width: 40%;
+    height: 40vh;
     border-radius: 30px;
     position: relative;
     overflow: hidden;
-  }
+}
+
+.experience-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
