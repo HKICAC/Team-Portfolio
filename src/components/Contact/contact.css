@@ -5,15 +5,17 @@
     color: white;
     padding: 20px;
     position: relative;
-    height: 30vh;
+    /* height: 50vh; */
 }
 
-.header {
+.contact-header {
     color: white;
 }
 
-.link {
+.contact-link {
     display: flex;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 .contact-social-button {
@@ -33,4 +35,8 @@
     transition: 0.2s;
     padding: 10px;
     color: orange;
+}
+
+.contact-hidden {
+    display: none;
 }
