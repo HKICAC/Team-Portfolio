@@ -1,5 +1,5 @@
 import React from 'react';
-import Typical from 'react-typical'
+// import Typical from 'react-typical'
 import "./contact.css";
 import Me from "../../img/icac.png";
 import {FaGithubSquare, FaLinkedin} from "react-icons/fa";
