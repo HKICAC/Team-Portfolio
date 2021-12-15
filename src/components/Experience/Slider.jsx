@@ -11,7 +11,7 @@ const data =[
     Aliquam hendrerit posuere augue, vitae convallis felis congue ut. Fusce vitae dapibus mi. 
     Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
     `,
-    
+
     `Aliquam blandit quam quis ligula mattis fermentum. 
     Proin et augue vel nisl laoreet egestas consequat ut dui. 
     Aenean justo sapien, tempus in nulla a, congue laoreet quam. 
@@ -32,25 +32,25 @@ const data =[
 ];
 
 export default function Slider(){
-    const [slideIndex, setSlideIndex] = useState(1);
+    const [slideIndex, setSlideIndex] = useState(0);
 
     console.log(slideIndex);
     console.log(data.length);
 
     // Functions to control the slide navigation: Next
     const nextSlide = () =>{
-        if (slideIndex !== data.length){
+        if (slideIndex !== data.length - 1){
             setSlideIndex(slideIndex + 1);
         } else {
-            setSlideIndex(1);
+            setSlideIndex(0);
         }
     }
     // Functions to control the slide navigation: Prev
     const prevSlide = () =>{
         if(slideIndex !== 1){
             setSlideIndex(slideIndex - 1)
-        } else if(slideIndex === 1){
-            setSlideIndex( data.length);
+        } else if(slideIndex === 0){
+            setSlideIndex( data.length - 1);
         }
     }
 
@@ -62,7 +62,7 @@ export default function Slider(){
                     return(
                         <div
                         key = {index}
-                        className ={slideIndex === index + 1 ?
+                        className ={slideIndex === index ?
                             "slide active-anim" 
                             : "slide"}
                         >
