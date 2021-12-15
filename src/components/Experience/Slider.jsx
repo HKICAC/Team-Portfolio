@@ -47,7 +47,7 @@ export default function Slider(){
     }
     // Functions to control the slide navigation: Prev
     const prevSlide = () =>{
-        if(slideIndex !== 1){
+        if(slideIndex !== 0){
             setSlideIndex(slideIndex - 1)
         } else if(slideIndex === 0){
             setSlideIndex( data.length - 1);
@@ -65,8 +65,8 @@ export default function Slider(){
                         className ={slideIndex === index ?
                             "slide active-anim" 
                             : "slide"}
-                        >
-                                {obj}
+                        >   
+                            <Typography>{obj}</Typography>  
                         </div>
                     );
                 })

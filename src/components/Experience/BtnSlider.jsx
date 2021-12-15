@@ -17,7 +17,6 @@ export default function BtnSlider(props){
         onClick = {props.moveSlide}
         startIcon ={props.direction === "next" ? <KeyboardArrowRightIcon/> : <KeyboardArrowLeftIcon/>} 
         >
-            {props.direction === "next" ? "Next":"Prev"}
         </Button>
     );
 }

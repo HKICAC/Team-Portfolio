@@ -5,6 +5,7 @@
     position: relative;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
   }
   @media screen and (max-width: 700px){
     .container-slider {
@@ -17,7 +18,9 @@
     position: absolute;
     color: rgba(0, 0, 0, 0);
     transition: color ease-in-out 0.4s;
-    justify-content: center;
+
+    /* Content Allignment */
+    text-align: center;
   }
   .slide img {
     width: 100%;

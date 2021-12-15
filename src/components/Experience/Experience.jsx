@@ -22,10 +22,11 @@ function Experience() {
       <div>
         <Grid className="experience-content" container spacing={3}>
           <Grid item xs={6}>
+
             <Slider />
+          
           </Grid>
           <Grid item xs={6} className="experience-grid">
-            <div className="experience-card bg"></div>
             <div className="experience-card">
               <img src={Facebook} className="experience-img"/>
             </div>
