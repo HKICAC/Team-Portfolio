@@ -10,6 +10,10 @@ import Slider from "./Slider";
 // React-typing-effect
 import ReactTypingEffect from 'react-typing-effect';
 
+const facebookData = [
+  "1haha", "2yoyoy", "3afgsldghsdkgbdjkgdsnkgnksd"
+]
+
 function Experience() {
    return (
     <div className="experience">
@@ -22,14 +26,10 @@ function Experience() {
       <div>
         <Grid className="experience-content" container spacing={3}>
           <Grid item xs={6}>
-
-            <Slider />
-          
+            <Slider className="experience-card" data={facebookData}/>
           </Grid>
           <Grid item xs={6} className="experience-grid">
-            <div className="experience-card">
-              <img src={Facebook} className="experience-img"/>
-            </div>
+            <img src={Facebook} className="experience-img"/>
           </Grid>
           <Grid item xs={6}>
             <img src={Apple} className="experience-img"/>
