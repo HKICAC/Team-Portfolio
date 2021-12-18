@@ -61,8 +61,12 @@ export default function Slider(props){
                 <FaAngleLeft className="slider-button"
                     onClick={prevSlide}/>
                 </Grid>
-                <Grid item xs={10} className="slide-content">
-                    {props.data ? props.data[slideIndex] : "no data was passed"}
+                <Grid item xs={10}>
+                    <h3 className="slide-content-header">{props.header ? props.header[slideIndex] : "no header was passed"}</h3>
+                    <p className="slide-content">
+                        {props.data ? props.data[slideIndex] : "no data was passed"}
+                    </p>
+                    
                 </Grid>
                 <Grid item xs={1}>
                 <FaAngleRight className="slider-button"
