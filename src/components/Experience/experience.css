@@ -20,7 +20,9 @@ h1 {
 }
 
 .experience-grid {
-    position: relative;
+    /* position: relative; */
+    /* margin: 100px; */
+    /* border: 2px solid; */
 }
 
 
@@ -42,8 +44,10 @@ h1 {
 }
 
 .experience-img {
-    width: 100%;
-    height: 100%;
+    position: relative;
+    /* top: 20vh; */
+    width: 30vh;
+    height: 30vh;
     object-fit: cover;
     border-radius: 30px;
 }

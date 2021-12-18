@@ -25,24 +25,22 @@ function Experience() {
       />
       <div>
         <Grid className="experience-content" container spacing={3}>
-          <Grid item xs={6}>
+          <Grid item xs={6} className="experience-grid">
             <Slider className="experience-card" data={facebookData}/>
           </Grid>
           <Grid item xs={6} className="experience-grid">
             <img src={Facebook} className="experience-img"/>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={6} className="experience-grid">
             <img src={Apple} className="experience-img"/>
           </Grid>
-          <Grid item xs={6}>
-          <h2>Apple Intern</h2>
-            Summer 2021 
+          <Grid item xs={6} className="experience-grid">
+          <Slider className="experience-card" data={facebookData}/>
           </Grid>
-          <Grid item xs={6}>
-          <h2>Netflix Intern</h2>
-            Summer 2021
+          <Grid item xs={6} className="experience-grid">
+          <Slider className="experience-card" data={facebookData}/>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={6} className="experience-grid">
             <img src={Netflix} className="experience-img"/>
           </Grid>
         </Grid>
