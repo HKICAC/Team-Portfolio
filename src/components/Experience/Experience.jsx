@@ -5,6 +5,7 @@ import Apple from "../../img/apple.png";
 import Facebook from "../../img/facebook.png";
 import Netflix from "../../img/netflix.jpg";
 import Slider from "./Slider";
+import Divider from '@mui/material/Divider';
 
 // https://www.npmjs.com/package/react-typing-effect
 // React-typing-effect
@@ -26,19 +27,27 @@ function Experience() {
       <div>
         <Grid className="experience-content" container spacing={3}>
           <Grid item xs={6} className="experience-grid">
+            <h3>Facebook</h3>
+            <p>Summer 2021</p>
             <Slider className="experience-card" data={facebookData}/>
           </Grid>
           <Grid item xs={6} className="experience-grid">
             <img src={Facebook} className="experience-img"/>
           </Grid>
+        </Grid>
+        <Divider/>
+        <Grid className="experience-content" container spacing={3}>
           <Grid item xs={6} className="experience-grid">
             <img src={Apple} className="experience-img"/>
           </Grid>
           <Grid item xs={6} className="experience-grid">
-          <Slider className="experience-card" data={facebookData}/>
+            <Slider className="experience-card" data={facebookData}/>
           </Grid>
+        </Grid>
+        <Divider/>
+        <Grid className="experience-content" container spacing={3}>
           <Grid item xs={6} className="experience-grid">
-          <Slider className="experience-card" data={facebookData}/>
+            <Slider className="experience-card" data={facebookData}/>
           </Grid>
           <Grid item xs={6} className="experience-grid">
             <img src={Netflix} className="experience-img"/>

@@ -46,6 +46,7 @@ h1 {
 .experience-img {
     position: relative;
     /* top: 20vh; */
+    margin-top: 5vh;
     width: 30vh;
     height: 30vh;
     object-fit: cover;
