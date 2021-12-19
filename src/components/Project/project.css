@@ -18,11 +18,18 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     overflow: hidden;
     
+    
+}
+
+.project-content {
+    padding: 20px;
 }
 
 .project-box-body{
     color:rgba(0, 0, 0);
     display: none;
+    /* margin: auto; */
+    padding:10px;
 }
 
 .project-img {
@@ -37,7 +44,7 @@
 
 .project-box:hover .project-box-body{
     display: block;
-    animation-duration: 1.5s;
+    animation-duration: 0.5s;
     animation-name: textFadeIn;
 }
 

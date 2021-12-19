@@ -89,8 +89,9 @@
 
   .slide-content {
     display: flex;
-    justify-content: center;
-    align-content: center;
+    justify-content: left;
+    align-content: left;
+    text-align: left;
     flex-direction: column;
     white-space:pre-wrap;
   }

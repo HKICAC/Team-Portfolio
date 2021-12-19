@@ -53,6 +53,16 @@ export default function Slider(props){
         }
     }
 
+    const displayList = (data) => {
+        // data should be seperated by \n
+        return (
+            <ul>
+                {data.split('\n').map(item=><li>{item}</li>)}
+            </ul>
+            
+        )
+    }
+
     // Renders the slides
     return (
         <div className = "container-slider">
