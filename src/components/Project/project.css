@@ -36,6 +36,9 @@
     width: 100%;
     height: 60%;
     object-fit: cover;
+    /* Makes the images unselectable */
+    pointer-events: none;
+    user-select: none;
 }
 
 .project-box:hover {

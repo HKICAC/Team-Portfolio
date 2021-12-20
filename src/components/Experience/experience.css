@@ -51,5 +51,8 @@ h1 {
     max-height: 50vh;
     object-fit: cover;
     border-radius: 30px;
+    /* Makes the images unselectable */
+    pointer-events: none;
+    user-select: none;
 }
 
