@@ -9,69 +9,150 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Netflix from "../../img/netflix.jpg";
-import Discordbot from "../../img/discordbot.png";
 import useWindowDimensions from '../Window/Window';
-
-// https://www.npmjs.com/package/react-typing-effect
-// React-typing-effect
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
 import ReactTypingEffect from 'react-typing-effect';
 
-// Github Buttons
-import {FaGithubSquare, FaLinkedin} from "react-icons/fa";
+// icons
+import { FaReact, FaDiscord, FaGithub, FaMapMarkedAlt, FaJava, FaDocker } from "react-icons/fa";
+import { DiSqllite } from "react-icons/di";
+import { SiElectron, SiApachesolr, SiSpringboot, SiSequelize } from "react-icons/si";
+
+// pics
+import Netflix from "../../img/netflix.jpg";
+import Discordbot from "../../img/discordbot.png";
+import ArcgisMap from "../../img/arcgismap.png";
+import Electron from "../../img/electron.png";
+import Blackrock from "../../img/blackrock.jpg";
 
 
 function Project() {
     const { height, width } = useWindowDimensions();
+    const icons = {
+        'react': <FaReact/>
+    }
 
     return (
-        <div className="project">
-        <ReactTypingEffect
-            text={["Project List"]}
-            eraseDelay= {50000000}
-            typingDelay= {2500}
-            className= 'project-title'
-        />
+        <div id="project" className="project">
+            <Typography variant="h3">Projects</Typography>
             <Grid className="experience-grid" container spacing={3}>
-                <Grid item xs={4}>
+            <Grid item xs={12} sm={4}>
                 <div className="project-box">
-                    <img className="project-img" src={Discordbot} alt='Netflix Logo'></img>
+                    <img className="project-img" src={Discordbot} alt='Discord Bot Capture'></img>
                     <div className="project-content">
-                        <Typography variant="h3">Discord Bulletin Bot</Typography>
-                        <Typography variant="h3">@UCSC</Typography>
+                        <Typography variant="h4">Discord Bulletin Bot</Typography>
+                        <Typography variant="h4">@UCSC</Typography>
                         <div className='project-box-body'>
-                            <Typography>Project 1 is a very interesting project. It utilizes the NERP stack is very useful.</Typography>
-                            <a href="https://github.com/orgs/HKICAC/dashboard" target="_blank" rel="noreferrer">
-                                <FaGithubSquare className="social-button"/>
+                            <Typography>Created a discord bot so student can receive important message via discord DMs. Students can subscribe to their different classes and clubs</Typography>
+                            <List>
+                            <ListItem disablePadding>
+                                <ListItemIcon className="project-icon">
+                                    <FaReact/>
+                                </ListItemIcon>
+                                <ListItemText primary="React" />
+                            </ListItem>
+                            <ListItem disablePadding>
+                                <ListItemIcon className="project-icon">
+                                    <DiSqllite />
+                                </ListItemIcon>
+                                <ListItemText primary="SQLite" />
+                            </ListItem>
+                            <ListItem disablePadding>
+                                <ListItemIcon className="project-icon">
+                                    <FaDiscord />
+                                </ListItemIcon>
+                                <ListItemText primary="Discord.js" />
+                            </ListItem>
+                            <ListItem disablePadding>
+                                <ListItemIcon className="project-icon">
+                                    <FaDocker />
+                                </ListItemIcon>
+                                <ListItemText primary="Docker" />
+                            </ListItem>
+                            <ListItem disablePadding>
+                                <ListItemIcon className="project-icon">
+                                    <SiSequelize />
+                                </ListItemIcon>
+                                <ListItemText primary="Sequelize" />
+                            </ListItem>
+                            </List>
+                            <a href="https://github.com/zkm1/discordbulletinbot" target="_blank" rel="noreferrer">
+                                <FaGithub className="project-github"/>
                             </a>
                         </div>
                     </div>
                 </div>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={12} sm={4}>
                 <div className="project-box">
-                    <img className="project-img" src={Netflix} alt='Netflix Logo'></img>
+                    <img className="project-img" src={ArcgisMap} alt='Arcgis Map capture'></img>
                     <div className="project-content">
-                        <Typography variant="h2">Project 2</Typography>
+                        <Typography variant="h4">CalEnviroScreen Map</Typography>
+                        <Typography variant="h4">@DTSC</Typography>
                         <div className='project-box-body'>
-                            <Typography>Project 1 is a very interesting project. It utilizes the NERP stack is very useful.</Typography>
-                            <a href="https://github.com/orgs/HKICAC/dashboard" target="_blank" rel="noreferrer">
-                                <FaGithubSquare className="social-button"/>
-                            </a>
+                            <Typography>Created a map with Eris ArcGIS JS APIthat involved with over 10,000
+California's HWMP facilities data from DTSC web server endpoints. </Typography>
+                            <List>
+                            <ListItem disablePadding>
+                                <ListItemIcon className="project-icon">
+                                    <FaReact/>
+                                </ListItemIcon>
+                                <ListItemText primary="React" />
+                            </ListItem>
+                            <ListItem disablePadding>
+                                <ListItemIcon className="project-icon">
+                                    <FaMapMarkedAlt />
+                                </ListItemIcon>
+                                <ListItemText primary="Eris ArcGis" />
+                            </ListItem>
+                            </List>
                         </div>
                     </div>
                 </div>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={12} sm={4}>
                 <div className="project-box">
-                    <img className="project-img" src={Netflix} alt='Netflix Logo'></img>
+                    <img className="project-img" src={Blackrock} alt='blackrock Logo'></img>
                     <div className="project-content">
-                        <Typography variant="h2">Project 3</Typography>
+                        <Typography variant="h4">Aladdin Database Visualizer</Typography>
+                        <Typography variant="h4">@Blackrock</Typography>
                         <div className='project-box-body'>
-                            <Typography>Project 1 is a very interesting project. It utilizes the NERP stack is very useful.</Typography>
-                            <a href="https://github.com/orgs/HKICAC/dashboard" target="_blank" rel="noreferrer">
-                                <FaGithubSquare className="social-button"/>
-                            </a>
+                            <Typography>Created a discord bot so student can receive important message via discord DMs. Students can subscribe to their different classes and clubs</Typography>
+                            <List>
+                            <ListItem disablePadding>
+                                <ListItemIcon className="project-icon">
+                                    <FaReact/>
+                                </ListItemIcon>
+                                <ListItemText primary="React" />
+                            </ListItem>
+                            <ListItem disablePadding>
+                                <ListItemIcon className="project-icon">
+                                    <SiElectron />
+                                </ListItemIcon>
+                                <ListItemText primary="Electron" />
+                            </ListItem>
+                            <ListItem disablePadding>
+                                <ListItemIcon className="project-icon">
+                                    <SiApachesolr />
+                                </ListItemIcon>
+                                <ListItemText primary="Solr" />
+                            </ListItem>
+                            <ListItem disablePadding>
+                                <ListItemIcon className="project-icon">
+                                    <FaJava />
+                                </ListItemIcon>
+                                <ListItemText primary="Java" />
+                            </ListItem>
+                            <ListItem disablePadding>
+                                <ListItemIcon className="project-icon">
+                                    <SiSpringboot />
+                                </ListItemIcon>
+                                <ListItemText primary="Springboot" />
+                            </ListItem>
+                            </List>
                         </div>
                     </div>
                 </div>

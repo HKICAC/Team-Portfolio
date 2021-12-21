@@ -1,7 +1,8 @@
 .project{
     text-align: left;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
+    /* height: 100vh; */
     background-color: #DCDCDC;
     margin: 0;
     padding: 60px;
@@ -11,13 +12,13 @@
     font-size: 30px;
 }
 .project-box {
-    height: 50vh;
+    /* height: 50vh; */
     background-color: white;
     transition: 0.2s;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     overflow: hidden;
-    
+    transition-delay: 2s;
     
 }
 
@@ -30,25 +31,32 @@
     display: none;
     /* margin: auto; */
     padding:10px;
+    /* position: relative; */
 }
 
 .project-img {
     width: 100%;
-    height: 60%;
+    height: 30vh;
     object-fit: cover;
-    /* Makes the images unselectable */
+    transition-duration: 0.2s;
     pointer-events: none;
     user-select: none;
 }
 
 .project-box:hover {
-    height: 70vh;
+    max-height: 200%;
+    /* height: 100%; */
+    /* height:auto; */
 }
 
 .project-box:hover .project-box-body{
     display: block;
     animation-duration: 0.5s;
     animation-name: textFadeIn;
+}
+
+.project-box:hover .project-img{
+    height: 35vh;
 }
 
 @keyframes textFadeIn{
@@ -61,4 +69,26 @@
         margin-top:0%;
         color:rgba(0, 0, 0);
     }
+}
+
+.project-icon {
+    color: black;
+    font-size: 35px;
+}
+
+.project-github {
+    font-size: 60px;
+    /* position: absolute;
+    left: 5px; */
+    /* bottom: 5px; */
+    color: #6e5494;
+}
+
+.project-github:hover {
+    /* bottom: 5px; */
+    color: purple;
+}
+
+html {
+    scroll-behavior: smooth;
 }
